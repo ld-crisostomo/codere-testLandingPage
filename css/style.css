@@ -1,9 +1,13 @@
-
+* {
+    font-family: 'Baloo Chettan 2', cursive;
+}
 
 html,
 body {
     height: 100%;
 }
+
+/* ***** HEADER ***** */
 
 header {
     height: 871px;
@@ -38,7 +42,11 @@ header {
     color: rgb(255, 255, 255);
 }
 
-/* **************** */
+.shadow-box {
+    box-shadow: 0px 5px 6px #00000030;
+}
+
+/* ***** Navbar Animation ***** */
 
 /* Remove border from toggler */
 .navbar-toggler {
@@ -105,7 +113,7 @@ header {
     background-color: #ffffff;
 }
 
-/* ******* */
+/* ***** Counter Animation ***** */
 
 /* Counter animation */
 
@@ -128,10 +136,12 @@ header {
     animation: aparecer 1.3s;
 }
 
+/* ***** Counter Section ***** */
+
 #contadores_principal {
-    background-image: url("../assets/JPG/middle.jpg");
+    background-image: url("../assets/JPG/middle1.jpg");
     background-size: cover;
-    height: 211px;
+    height: 100%;
 }
 
 .contador_cantidad,
@@ -139,3 +149,64 @@ header {
     color: #ffffff;
 }
 
+.contador{
+    margin-top: 60px;
+    margin-bottom: 60px;
+    
+}
+
+/* ***** Socio Section ***** */
+
+#socio {
+    background-image: url("../assets/JPG/socio.jpg");
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    max-height: 100%;
+}
+
+.shape1 {
+    background-color: #333f48;
+    margin-top: 70px;
+    border-top-left-radius: 200px;
+    border-bottom-left-radius: 200px;
+}
+
+.shape2 {
+    background-color: #333f48;
+    margin-top: 70px;
+    border-top-right-radius: 200px;
+    border-bottom-right-radius: 200px;
+}
+
+.title{
+    color: #1BFD37;
+    font-weight: 700;
+}
+
+.text {
+    color: #F0AB41;
+    font-weight: 500;
+}
+
+.text3{
+    color: #1BFD37;
+    font-weight: 500;
+}
+
+.txt-r {
+    margin-left: 1rem;
+}
+
+.line {
+    max-width: 1101px;
+    padding: 0px;
+}
+
+/* ****** Download ***** */
+#download {
+    background-image: url("../assets/JPG/middle2.jpg");
+    background-size: cover;
+    height: 100%;
+}
