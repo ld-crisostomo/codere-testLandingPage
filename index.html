@@ -1,10 +1,10 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
     <head>
         <!-- Required meta tags -->
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-
+        
         <!-- Bootstrap CSS -->
         <link
             href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
@@ -19,6 +19,7 @@
         <link
             href="https://fonts.googleapis.com/css2?family=Baloo+Chettan+2:wght@400;500;700&display=swap"
             rel="stylesheet">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
         <link rel="stylesheet" href="./css/style.css">
 
@@ -26,11 +27,11 @@
     </head>
     <body>
 
-        <header>
+        <header id="start">
             <!-- Navbar -->
             <nav class="navbar fixed-top navbar-expand-lg navbar-dark p-md-3">
-                <div class="container">
-                    <a class="navbar-brand" href="#">
+                <div class="container" data-aos="fade-down" data-aos-duration="1000">
+                    <a class="navbar-brand" href="#start">
                         <img
                             src="./assets/PNG/logotipo-codere-green-mob.png"
                             alt="logo"
@@ -52,9 +53,9 @@
 
                     <div class="collapse navbar-collapse" id="navbarNav">
                         <div class="mx-auto"></div>
-                        <ul class="navbar-nav">
+                        <ul class="navbar-nav nav-pills">
                             <li class="nav-item">
-                                <a class="nav-link text-white" href="#">Inicio</a>
+                                <a class="nav-link text-white" href="#start">Inicio</a>
                             </li>
                             <li class="nav-item">
                                 <a class="nav-link text-white" href="#">Socio</a>
@@ -74,9 +75,11 @@
             <div class="banner-image w-100 vh-100 d-flex align-items-center">
                 <div class="container">
                     <div class="row">
-                        <div class="col-6 text-center">
+                        <div class="col-6 text-center" data-aos="fade-right" data-aos-duration="1000">
                             <img src="./assets/PNG/head-cherry.png" alt="" id="headCherry"><br>
-                            <button type="button" id="btn-iniciar" class="btn btn-warning btn-lg">INICIAR</button>
+                            <a href="#contadores_principal">
+                                <button type="button" id="btn-iniciar" class="btn btn-warning btn-lg">INICIAR</button>
+                            </a>
                         </div>
                     </div>
 
@@ -85,26 +88,81 @@
             </div>
         </header>
 
+        <br><br><br>
+
         <main>
+
+            <section id="contadores_principal" class="contadores_principal">
+                <div class="container">
+                    <div class="row">
+                        <div class="col contador ocultar" style="margin-top: 50px;">
+                            <div class="row">
+                                <div class="col">
+                                    <i class="fa fa-code fa-3x text-white" style="float: right;"></i>
+
+                                </div>
+                                <div class="col">
+                                    <h1 class="contador_cantidad" data-cantidad-total="80">0</h1>
+                                    <span class="txt_contador_cantidad">Sucursales</span>
+                                </div>
+                            </div>
+                            
+                        </div>
+
+                        <div class="col text-center contador ocultar">
+                            <div class="row">
+                                <div class="col">
+                                    <i class="fa fa-code fa-3x text-white" style="float: right;"></i>
+
+                                </div>
+                                <div class="col">
+                                    <h1 class="contador_cantidad" data-cantidad-total="80">0</h1>
+                                    <span class="txt_contador_cantidad">Usuarios</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col text-center contador ocultar">
+                            <div class="row">
+                                <div class="col">
+                                    <i class="fa fa-code fa-3x text-white" style="float: right;"></i>
+
+                                </div>
+                                <div class="col">
+                                    <h1 class="contador_cantidad" data-cantidad-total="80">0</h1>
+                                    <span class="txt_contador_cantidad">Socios</span>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </section>
+
+            <br><br><br>
 
             <section class="">
                 <div class="container">
                     <div class="row">
-                        <div class="col-lg-6 col-md-6 mb-4">
+                        <div class="col ">
                             <h1 id="txt-vash" class="text-uppercase font-weight-bold">¿Qué es Vash?</h1>
-                            <p style="font-size: 16px; margin-top: 26px">En Vash sabemos lo complicado que es cambiarte<br>de casa, queremos que cada momento con<br>nosotros sea de calidad y de confianza</p>
+                            <p style="font-size: 16px; ">En Vash sabemos lo complicado que es cambiarte<br>de casa, queremos que cada momento con<br>nosotros sea de calidad y de confianza</p>
                         </div>
 
-                        <div class="col-lg-6 col-md-6 mb-4">
-                            <img
-                                id="img-casaMudanza"
-                                class="mx-auto d-block"
-                                src="img/Vash/casa mudanza.png"
-                                alt="">
+                        <div class="col ">
+                            <h1 id="txt-vash" class="text-uppercase font-weight-bold">¿Qué es Vash?</h1>
+                            <p style="font-size: 16px; ">En Vash sabemos lo complicado que es cambiarte<br>de casa, queremos que cada momento con<br>nosotros sea de calidad y de confianza</p>
+                        </div>
+
+                        <div class="col ">
+                            <h1 id="txt-vash" class="text-uppercase font-weight-bold">¿Qué es Vash?</h1>
+                            <p style="font-size: 16px;">En Vash sabemos lo complicado que es cambiarte<br>de casa, queremos que cada momento con<br>nosotros sea de calidad y de confianza</p>
                         </div>
                     </div>
                 </div>
             </section>
+
+            <br><br><br>
 
         </main>
 
@@ -113,6 +171,9 @@
             src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
             integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
             crossorigin="anonymous"></script>
+            <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+        <script src="https://kit.fontawesome.com/70e2dea142.js" crossorigin="anonymous"></script>
+        <script src="./js/scripts.js"></script>
 
     </body>
 </html>

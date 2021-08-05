@@ -1,11 +1,12 @@
-* {
-    font-family: 'Baloo Chettan 2', cursive;
-}
+
 
 html,
-body,
-header {
+body {
     height: 100%;
+}
+
+header {
+    height: 871px;
 }
 
 #logoCodere {
@@ -13,7 +14,7 @@ header {
 }
 
 .nav-item{
-    font-size: 20px;
+    font-size: 1.3em;
     margin-right: 3rem;
 }
 
@@ -103,3 +104,38 @@ header {
 .navbar-toggler.collapsed .toggler-icon {
     background-color: #ffffff;
 }
+
+/* ******* */
+
+/* Counter animation */
+
+@keyframes aparecer {
+    0% {
+        opacity: 0;
+        transform: translateY(50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.ocultar {
+    opacity: 0;
+}
+
+.animar {
+    animation: aparecer 1.3s;
+}
+
+#contadores_principal {
+    background-image: url("../assets/JPG/middle.jpg");
+    background-size: cover;
+    height: 211px;
+}
+
+.contador_cantidad,
+.txt_contador_cantidad {
+    color: #ffffff;
+}
+
