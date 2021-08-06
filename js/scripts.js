@@ -1,6 +1,8 @@
 // Initialize AOS
   AOS.init();
 
+  new Splide( '#image-slider' ).mount();
+
 addEventListener('DOMContentLoaded', () => {
     const contadores = document.querySelectorAll('.contador_cantidad')
     const velocidad = 1000
