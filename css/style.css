@@ -18,7 +18,7 @@ header {
 }
 
 .nav-item {
-    font-size: 1.3em;
+    font-size: 1.2em;
     margin-right: 3rem;
 }
 
@@ -151,10 +151,11 @@ header {
 }
 
 .contador {
-    margin-top: 60px;
-    margin-bottom: 60px;
+    /* margin-top: 60px;
+    margin-bottom: 60px; */
 
 }
+
 
 /* ***** Socio Section ***** */
 
@@ -184,6 +185,10 @@ header {
     margin-top: 70px;
     border-top-right-radius: 200px;
     border-bottom-right-radius: 200px;
+}
+
+.row-marg {
+    margin-top: -100px;
 }
 
 .img-socio {
@@ -306,26 +311,44 @@ footer {
     text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.3);
 }
 
+@media (min-width: 992px) {
+    .icon-counter {
+       float: right; 
+    }
+}
+
 @media (max-width: 576px) {
+
+    /* ****** Header ***** */
 
     #logoCodere {
         max-width: 8rem;
     }
 
     #headCherry {
-        max-width: 28rem;
+        max-width: 22rem;
         margin: auto;
     }
 
     #btn-iniciar {
-        width: 10rem;
+        width: 8rem;
         color: rgb(255, 255, 255);
         background-color: #F0AB41;
-        font-size: 1rem;
+        font-size: 0.9rem;
     }
+
+    /* ****** Counter ***** */
+    .icon-counter {
+        margin-bottom: 1rem;
+    }
+
+    /* ****** Socio ***** */
 
     .num-socio {
         max-width: 6rem;
+        float: left;
+        margin-top: 2rem;
+        margin-bottom: 0;
     }
 
     .shape1 {
@@ -338,10 +361,29 @@ footer {
         border-bottom-right-radius: 0;
     }
 
+    .row-marg {
+        margin-top: -50px;
+    }
+
     .img-bar {
         max-width: 15rem;
         transform: rotate(-20deg);
     }
+
+    .text {
+        color: #F0AB41;
+        font-weight: 500;
+        font-size: 15px;
+    }
+    
+    .text3 {
+        color: #1BFD37;
+        font-weight: 500;
+    }
+
+    /* ****** Slider ***** */
+
+    /* ****** Contact ***** */
 
     #img-mailBox {
         transform: scaleX(-1);
@@ -352,8 +394,18 @@ footer {
         float: left;
     }
 
+    /* ****** Footer ***** */
+
     .img-footer2 {
         max-width: 10rem;
     }
 
+}
+
+.bg-dark {
+    background:transparent !important;
+    transition:0.75s ease;
+}
+.bg-dark.scrolled {
+    background:#000 !important;
 }
