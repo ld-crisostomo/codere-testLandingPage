@@ -5,7 +5,7 @@
 
 addEventListener('DOMContentLoaded', () => {
     const contadores = document.querySelectorAll('.contador_cantidad')
-    const velocidad = 1000
+    const velocidad = 2000
 
     const animarContadores = () => {
         for (const contador of contadores) {
@@ -47,3 +47,12 @@ addEventListener('DOMContentLoaded', () => {
     })
 
 })
+
+function sendMail() {
+    swal({
+        title: "Enviado!",
+        text: "Tu correo ha sido enviado...",
+        icon: "success",
+        button: "Aceptar",
+      });
+}
